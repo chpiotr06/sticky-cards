@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="app.js" defer></script>
+  <script src="https://kit.fontawesome.com/4606379726.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div data-visible="false" class="add-window">
+    <div class="note-template">
+      <div class="note-header">
+        <i id="exit-btn" class="far fa-times-circle bigger-circle"></i>
+      </div>
+      <div class="note-title">
+        <textarea name="note-title" id="title" rows="1" placeholder="Add title" spellcheck="false"></textarea>
+      </div>
+      <div class="note-content">
+        <textarea id="content" placeholder="Add contnet" spellcheck="false"></textarea>
+      </div>
+    </div>
+    <button id="add-note-btn" type="button">Add note</button>
+  </div>
+  <div class="notes-window">
+    <header>
+      <div class="title">Sticky notes</div>
+      <button id="add-note-menu" type="button">Add notes</button>
+    </header>
+    <div class="notes-app">
+    </div>
+  </div>
+</body>
+</html>
